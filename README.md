@@ -1,6 +1,7 @@
 # NOWAY JS:
-<p><b>nowAy</b> is a <b>javascript library</b> designed to make easier the HTML DOM element creation and manipulation, event handling, css, very simplified AJAX.
-It is free, under the <b>open-source MIT license</b>.<br><br>
+<p><b>nowAy</b> is a <b>JavaScript library</b> designed to make easier the HTML DOM element creation and manipulation, event handling, css, very simplified AJAX.
+It is free, under the <b>open-source MIT license</b>.<br>
+It is based on JavaScript object<br><br>
 Created by <b>Gokul J S</b> from <b>ROAMSOFT</br>.</p>
 
 # Features:
