@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Noway JS</title>
+        <script type="text/javascript" src="file:///E:/projects/noway.js/noway.js"></script>
+    </head>
+    <body>
+        <div class="noway" id="noway"></div>
+        <div class="noway" id="noway1"></div>
+        <div class="noway" id="noway2"></div>
+        
+        <script type="text/javascript">
+            var noway = window._noway;
+            // Creating an element
+            var obj = {
+                "element": "div",
+                "id": "example_id",
+                "class": "example_class",
+                "attr": {"data-any-1": "value1", "data-any-2": "value2",},
+                "text": "example text",
+                "html": "<p>example html</p>",
+                "append": "#noway",
+            };
+            noway.createElem(obj);
+
+            // Set attributes
+            var obj1 = {
+                "element": "#noway1",
+                "attr": {"data-any-1": "value1", "data-any-2": "value2",},
+            };
+            noway.attr(obj1);
+            
+            // Add classes
+            var obj2 = {
+                "element": ".noway",
+                "class": ["example_class1", "example_class2", "example_class3"],
+            };
+            noway.addClass(obj2);
+
+            // Remove classes
+            var obj3 = {
+                "element": "#noway2",
+                "class": ["noway", "example_class2"],
+            };
+            noway.removeClass(obj3);
+
+            // Has class and inner text
+            var obj4 = {
+                "element": "#noway1",
+                "class": ["noway", "example_class3"],
+            };
+
+            if(noway.hasClass(obj4) === true){
+                noway.text({"element": obj4.element, "text": "Element has the classes \""+ obj4.class + '"'});
+            }
+
+            // Inner html
+            var obj5 = {
+                "element": '#noway2',
+                "html": "<p>example html</p>",
+            };
+            noway.html(obj5);
+        </script>
+    </body>
+</html>
