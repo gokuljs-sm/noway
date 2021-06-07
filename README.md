@@ -25,7 +25,7 @@ noway.debug = false;
     "class": "example_class" (or) ["example_class",...],
     "attr": {"key1":"value1", "key2":"value2",...},
     "text": "example text",
-    "html": "<p>example html</p>",
+    "html": "<\p\>example html<\/\p\>",
     "append": "#id" (or) ".class" (or) HTMLElement object,
 };
 noway.createElem(obj); // Result will done automatically and returns the created HTMLElement object (or) errors</pre>
@@ -42,7 +42,7 @@ noway.text(obj); // Result will done automatically and returns the created HTMLE
 <pre>
 var obj = {
     "element": "#id" (or) ".class" (or) HTMLElement object,
-    "html": "<p>example html</p>",
+    "html": "<\p\>example html<\/p\>",
 };
 noway.html(obj); // Result will done automatically and returns the created HTMLElement object (or) errors</pre>
 
